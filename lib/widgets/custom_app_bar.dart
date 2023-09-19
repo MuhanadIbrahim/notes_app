@@ -7,14 +7,16 @@ class CustomAppBar extends StatelessWidget {
   final String title;
   @override
   Widget build(BuildContext context) {
-    return  Row(
+    return Row(
       children: [
-       const Text(
-          'Notes',
+        Text(
+          title,
           style: TextStyle(fontSize: 30),
         ),
-       const Spacer(),
-        CustomSearchIcon(icon: icon,)
+        const Spacer(),
+        CustomSearchIcon(
+          icon: icon,
+        )
       ],
     );
   }
