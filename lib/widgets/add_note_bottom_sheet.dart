@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:notes_app/constaints.dart';
 
-import 'out_line_input_border.dart';
+import 'custom_text_field.dart';
 
 class AddNoteBottomsheet extends StatelessWidget {
   const AddNoteBottomsheet({super.key});
@@ -15,15 +14,16 @@ class AddNoteBottomsheet extends StatelessWidget {
           SizedBox(
             height: 18,
           ),
-          TextField(
-            decoration: InputDecoration(
-              hintText: 'Title',
-              hintStyle: TextStyle(color: KprimaryColor),
-              border: OutLineInputBorder(),
-              focusedBorder: OutLineInputBorder(),
-              enabledBorder: OutLineInputBorder(),
-            ),
+          CustomTextField(
+            hint: 'Title',
           ),
+          SizedBox(
+            height: 15,
+          ),
+          CustomTextField(
+            hint: 'Content',
+            maxLines: 5,
+          )
         ],
       ),
     );
