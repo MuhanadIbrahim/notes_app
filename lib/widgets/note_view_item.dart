@@ -31,14 +31,14 @@ class NoteViewItem extends StatelessWidget {
             borderRadius: BorderRadius.circular(16),
           ),
           child: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 18.0, horizontal: 10),
+            padding: const EdgeInsets.symmetric(vertical: 1, horizontal: 10),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.end,
               children: [
                 ListTile(
                   title: Text(
                     note.title,
-                    style: TextStyle(color: Colors.black, fontSize: 30),
+                    style: TextStyle(color: Colors.black, fontSize: 20),
                   ),
                   subtitle: Padding(
                     padding: const EdgeInsets.only(top: 10.0),
